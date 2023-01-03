@@ -4,116 +4,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+    /> -->
+    <link rel="stylesheet" href="projects.css" />
     <title>Alexander Miroshin</title>
   </head>
+
   <body>
+    <!-- Header -->
     <header>
-      <nav>
-        <ul>
-          <li>HOME</li>
-          <li>NEWS</li>
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
+      <div class="top-nav">
+        <div>Logo Here</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+          <li>Five</li>
         </ul>
-      </nav>
-      <hr />
-      <h1>Alexander Miroshin</h1>
+      </div>
     </header>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-        pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
-        mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
-        pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum nunc
-        congue. In dui nunc, iaculis ut lacus a, accumsan pharetra ligula.
-        Integer dictum, nisl at malesuada porta, libero mauris vehicula ligula,
-        maximus commodo sem ligula sed libero. Vivamus tincidunt lorem nec
-        tincidunt pulvinar. Nulla suscipit eu lorem sed consequat. Duis finibus
-        nisl ex, non congue magna ornare in. Donec vitae massa at mauris
-        pharetra tristique eget ut risus. Etiam tristique ex euismod lacus
-        pellentesque, et eleifend eros rutrum.
-      </p>
-      <p>
-        Donec ut massa urna. Curabitur porttitor, dolor sit amet aliquet
-        egestas, velit tortor faucibus tortor, non dictum lectus mi sit amet
-        urna. Ut tincidunt erat ligula, id fermentum diam fermentum pretium.
-        Fusce et maximus quam, ut tristique ante. Curabitur a augue elit.
-        Suspendisse cursus vehicula ipsum, quis mattis elit pellentesque nec.
-        Suspendisse lacinia ullamcorper condimentum. Vestibulum ante ipsum
-        primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam
-        suscipit pharetra ornare. Vestibulum ante ipsum primis in faucibus orci
-        luctus et ultrices posuere cubilia curae; Nunc congue tortor ac
-        ullamcorper porttitor.
-      </p>
-    </div>
-    <div class="boxes">
-      <div class="box_one">
-        <p class="string_one">hello world!</p>
+    <!-- "main" is divided into "sections" end fullscreen images-->
+    <main>
+      <!--"sections" are responsive. Each "sec" must have a "div" inside to be responsive-->
+      <div class="titlebox">
+        <!-- <div> -->
+        <h1>Project_02</h1>
+        <p>The parish complex</p>
+        <!-- <p class="maintxt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
+            pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
+            mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
+            pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum
+            nunc congue. In dui nunc, iaculis ut lacus a, accumsan pharetra
+            ligula. Integer dictum, nisl at malesuada porta, libero mauris
+            vehicula ligula, maximus commodo sem ligula sed libero. Vivamus
+            tincidunt lorem nec tincidunt pulvinar. Nulla suscipit eu lorem sed
+            consequat. Duis finibus nisl ex, non congue magna ornare in. Donec
+            vitae massa at mauris pharetra tristique eget ut risus. Etiam
+            tristique ex euismod lacus pellentesque, et eleifend eros rutrum.
+          </p> -->
+        <!-- </div> -->
       </div>
-      <div class="box_two">
-        <p class="string_one">its been a while...</p>
-      </div>
-      <div class="box_three">
-        <p class="string_one">why did you come back?</p>
-      </div>
-    </div>
-    <hr />
-    <img
-      class="img"
-      src="images/meme01.png"
-      alt="a shitty design meme"
-      width="500"
-      height="500"
-    />
-    <div class="game">
-      <p>Вам понравился мем?</p>
+
+      <img src="/assets/images/projects/02/View_01.jpg" style="width: 100%" />
+
       <div>
-        <button onclick="document.getElementById('myimage').src='images/happy.webp'">
-          Да
-        </button>
-        <button onclick="document.getElementById('myimage').src='images/unhappy.webp'">
-          Нет
-        </button>
+        <p class="maintxt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
+          pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
+          mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
+          pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum nunc
+          congue. In dui nunc, iaculis ut lacus a, accumsan pharetra ligula.
+          Integer dictum, nisl at malesuada porta, libero mauris vehicula
+          ligula, maximus commodo sem ligula sed libero. Vivamus tincidunt lorem
+          nec tincidunt pulvinar. Nulla suscipit eu lorem sed consequat. Duis
+          finibus nisl ex, non congue magna ornare in. Donec vitae massa at
+          mauris pharetra tristique eget ut risus. Etiam tristique ex euismod
+          lacus pellentesque, et eleifend eros rutrum.
+        </p>
+        <br />
+        <img
+          src="/assets/images/projects/02/View_04_rough.png"
+          alt="View_04"
+          style="width: 100%"
+        />
+        <br />
+        <img
+          src="/assets/images/projects/02/View_05.png"
+          alt="View_05"
+          style="width: 100%"
+        />
+        <br />
+        <img
+          src="/assets/images/projects/02/3D_section.png"
+          alt="3D_section"
+          style="width: 100%"
+        />
+        <br />
+        <img
+          src="/assets/images/projects/02/Belfly.png"
+          alt="Belfly"
+          style="width: 100%"
+        />
+        <br />
+        <img
+          src="/assets/images/projects/02/Sketch_1.jpg"
+          alt="Sketch_1"
+          style="width: 100%"
+        />
+
+
+        <!-- <div class="gallery"> -->
+
+        <!-- <div class="column">
+            <img
+              src="/assets/images/projects/02/Sketch_1.1.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="/assets/images/projects/02/Sketch_3.jpg"
+              style="width: 100%"
+            />
+            <img
+              src="/assets/images/projects/01/cam03.jpg"
+              style="width: 100%"
+            />
+            </div> -->
+
+        <!-- <div class="column">
+              <img
+                src="/assets/images/projects/01/cam01.jpg"
+                style="width: 100%"
+              />
+              <img
+                src="/assets/images/projects/01/cam02.jpg"
+                style="width: 100%"
+              />
+              <img
+                src="/assets/images/projects/01/cam03.jpg"
+                style="width: 100%"
+              />
+            </div> -->
+
+        <!-- <div class="column">
+              <img
+                src="/assets/images/projects/01/cam01.jpg"
+                style="width: 100%"
+              />
+              <img
+                src="/assets/images/projects/01/cam02.jpg"
+                style="width: 100%"
+              />
+              <img
+                src="/assets/images/projects/01/cam03.jpg"
+                style="width: 100%"
+              />
+            </div> -->
+        <!-- </div> -->
+        <!-- <br> -->
+    
       </div>
-      <img id="myimage" src="images/unhappy.webp" style="width: 100px" />
-    </div>
-    <div class="parent">
-      <div class="child1">1</div>
-      <div class="child2">2</div>
-      <div class="child3">3</div>
-    </div>
-    <div class="feedback">
-      <p>Что вы думаете по этому поводу?</p>
-      <div>
-        <button onclick="document.getElementById('myimage2').src='images/emoji02.png'">
-          Мне смешно
-        </button>
-        <button onclick="document.getElementById('myimage2').src='images/emoji01.png'">
-          Нравится
-        </button>
-        <button onclick="document.getElementById('myimage2').src='images/emoji04.png'">
-          Не знаю
-        </button>
-        <button onclick="document.getElementById('myimage2').src='images/emoji06.png'">
-          Не нравится
-        </button>
-        <button onclick="document.getElementById('myimage2').src='images/emoji05.png'">
-          Очень не нравится
-        </button>
-      </div>
-      <img id="myimage2" src="images/emoji04.png" style="width: 100px" />
-    </div>
+      <br />
+    </main>
     <footer>
-      <p>Связаться с автором:</p>
-      <p>alexmiroshinov@gmail.com</p>
-      <p>соцсети:</p>
-      <ul>
-        <li>instagram</li>
-        <li>telegram</li>
-        <li>vkontakte</li>
-        <li>facebook</li>
-      </ul>
-  </footer>
+      <div>
+        <p>© Copyright 2022 - Alexander Miroshin</p>
+      </div>
+    </footer>
   </body>
 </html>
