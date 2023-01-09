@@ -145,9 +145,9 @@ main > div > img {
 
 /* 2nd option */
 #toplink:hover {
-  background-color: yellow;
-  border: 1px solid yellow;
-  color: black;
+  background-color: rgb(255, 255, 70);
+  border: 1px solid rgb(255, 255, 70);
+  color: #333;
 }
 
 footer {
