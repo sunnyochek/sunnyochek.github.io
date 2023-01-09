@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_main_footer.css" />
+    <link rel="stylesheet" href="style_topnav.css" />
     <title>Alexander Miroshin</title>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="top-nav">
-        <div>Logo Here</div>
+        <a href="about.html">
+          <div>Logo Here</div>
+        </a>
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
           <div class="menu-button"></div>
@@ -92,12 +95,26 @@
           style="width: 100%"
         />
       </div>
-      <br />
+      <div>
+        <!-- <a id="toplink" href="javascript:void(0)"> -->
+        <button id="toplink">to the top</button>
+        <!-- </a> -->
+      </div>
+      <!-- <br /> -->
     </main>
     <footer>
       <div>
         <p>© Copyright 2022 - Alexander Miroshin</p>
       </div>
     </footer>
+    <script>
+      let toplink = document.querySelector("#toplink");
+
+      toplink.addEventListener("click", navigatetotop, false);
+
+      function navigatetotop(e) {
+        document.body.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
