@@ -122,8 +122,9 @@ main > div > img {
 } */
 
 #toplink {
-  width: 150px;
-  align-self: flex-end;
+  width: 100%;
+  max-width: 150px;
+  align-self: flex-start;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
