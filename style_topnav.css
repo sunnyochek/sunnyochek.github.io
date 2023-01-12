@@ -1,6 +1,13 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
 .top-nav {
   display: flex;
-  max-width: 1080px;
+  max-width: 1000px;
   margin: auto;
   flex-direction: row;
   justify-content: space-between;
@@ -9,17 +16,24 @@
   /* height: 24px; */
 }
 
+.top-nav a {
+  text-decoration:none;
+  color: black;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+  
 }
 
 .menu-button-container {
