@@ -4,131 +4,198 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-    /> -->
-    <link rel="stylesheet" href="projects.css" />
-    <title>Alexander Miroshin</title>
-  </head>
+    <meta name="description" content="Architecture portfolio" />
+    <meta name="author" content="Alexander Miroshin" />
 
+    <link rel="stylesheet" href="/style-common.css">
+    <link rel="stylesheet" href="project-n.css" />
+    <link rel="stylesheet" href="/topnav.css" />
+    <link rel="stylesheet" href="/footer.css" />
+
+    <title>Project 02 - Alexander Miroshin</title>
+  </head>
   <body>
     <!-- Header -->
     <header>
       <div class="top-nav">
-        <div>Logo Here</div>
+        <a href="index.html">
+          <div class="img-container">
+            <img class="logo" src="/assets/images/mylogo.png" alt="Logo Here" />
+          </div>
+        </a>
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-button-container" for="menu-toggle">
           <div class="menu-button"></div>
         </label>
         <ul class="menu">
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-          <li>Four</li>
-          <li>Five</li>
+          <li>
+            <a href="index.html" class="crossref">Home</a>
+          </li>
+          <li>
+            <a href="projects.html" class="crossref">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" class="crossref">About</a>
+          </li>
         </ul>
       </div>
     </header>
-    <!-- "main" is divided into "sections" end fullscreen images-->
+    <!-- "main" is divided into "div"s end fullscreen images-->
     <main>
-      <!--"sections" are responsive. Each "sec" must have a "div" inside to be responsive-->
-      <section>
-        <div>
-          <h1>Project_01</h1>
-          <p class="maintxt">
-            Residential complex renovation in Nizhniy Novgorod City
-          </p>
-          <!-- <p class="maintxt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-            pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
-            mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
-            pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum
-            nunc congue. In dui nunc, iaculis ut lacus a, accumsan pharetra
-            ligula. Integer dictum, nisl at malesuada porta, libero mauris
-            vehicula ligula, maximus commodo sem ligula sed libero. Vivamus
-            tincidunt lorem nec tincidunt pulvinar. Nulla suscipit eu lorem sed
-            consequat. Duis finibus nisl ex, non congue magna ornare in. Donec
-            vitae massa at mauris pharetra tristique eget ut risus. Etiam
-            tristique ex euismod lacus pellentesque, et eleifend eros rutrum.
+      <div class="titlebox max-width-one">
+        <h1>project_02</h1>
+        <p>The parish complex</p>
+      </div>
+
+      <div class="topsection">
+        <div class="topsec-left">
+          <!-- <h1>
+            project_02
+          </h1>
+          <p>
+            The parish complex
           </p> -->
-        </div>
-      </section>
-      <!-- <br /> -->
-      <img src="/assets/images/projects/01/cam01.jpg" style="width: 100%" />
-      <br />
-
-      <!-- Photo Grid -->
-      <section>
-        <div>
-          <p class="maintxt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-            pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
-            mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
-            pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum
-            nunc congue. In dui nunc, iaculis ut lacus a, accumsan pharetra
-            ligula. Integer dictum, nisl at malesuada porta, libero mauris
-            vehicula ligula, maximus commodo sem ligula sed libero. Vivamus
-            tincidunt lorem nec tincidunt pulvinar. Nulla suscipit eu lorem sed
-            consequat. Duis finibus nisl ex, non congue magna ornare in. Donec
-            vitae massa at mauris pharetra tristique eget ut risus. Etiam
+          <p>
+            Donec vitae massa at mauris pharetra tristique eget ut risus. Etiam
             tristique ex euismod lacus pellentesque, et eleifend eros rutrum.
           </p>
-          <div class="gallery">
-            <div class="column">
-              <img
-                src="/assets/images/projects/01/cam01.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam02.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam03.jpg"
-                style="width: 100%"
-              />
-            </div>
+          <ul class="proj-atributes">
+            <li><strong>Type:</strong> Parish complex</li>
+            <li><strong>Category:</strong> Public, Religious</li>
+            <li><strong>Year:</strong> 2018</li>
+            <li><strong>Capacity:</strong> 350 people</li>
+            <li><strong>Site area:</strong> 2 800 sq.m</li>
+            <li><strong>Build area:</strong> 470 sq.m</li>
+          </ul>
+        </div>
+        <div class="topsec-right">
+          <img
+            src="/assets/images/projects/02/View_01.jpg"
+            alt="view 1"
+            style="width: 100%"
+          />
+        </div>
+      </div>
 
-            <div class="column">
-              <img
-                src="/assets/images/projects/01/cam01.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam02.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam03.jpg"
-                style="width: 100%"
-              />
-            </div>
+      <div class="main-section max-width-one">
+        <p class="two-column-txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
+          pellentesque interdum. Nam nec mauris elementum, aliquet tellus sed,
+          mollis lectus. Aenean at luctus neque, in commodo odio. Aenean et
+          pharetra ex. Morbi porta libero ut justo pellentesque, in rutrum nunc
+          congue. In dui nunc, iaculis ut lacus a, accumsan pharetra ligula.
+          Integer dictum, nisl at malesuada porta, libero mauris vehicula
+          ligula, maximus commodo sem ligula sed libero. Vivamus tincidunt lorem
+          nec tincidunt pulvinar. Nulla suscipit eu lorem sed consequat. Duis
+          finibus nisl ex, non congue magna ornare in. Donec vitae massa at
+          mauris pharetra tristique eget ut risus. Etiam tristique ex euismod
+          lacus pellentesque, et eleifend eros rutrum.
+        </p>
 
-            <div class="column">
-              <img
-                src="/assets/images/projects/01/cam01.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam02.jpg"
-                style="width: 100%"
-              />
-              <img
-                src="/assets/images/projects/01/cam03.jpg"
-                style="width: 100%"
-              />
-            </div>
+        <div class="img-container">
+          <img
+            src="/assets/images/projects/02/View_04_rough.png"
+            alt="View_04"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            src="/assets/images/projects/02/View_05.png"
+            alt="View_05"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- <div class="img-container">
+          <img
+            src="/assets/images/projects/02/Frame 51.png"
+            alt="Sketches"
+            style="width: 100%"
+          />
+        </div> -->
+      </div>
+
+      <!-- <div class="two-column-flex">
+        <div
+          class="img-container"
+          style="flex: 1; background-color: darkgoldenrod"
+        >
+          <img
+            src="/assets/images/projects/02/Sketch_1.jpg"
+            alt="Sketch 1"
+            style="background-color: lightgreen; width: 100%"
+          />
+        </div>
+
+        <div class="column" style="flex: 1; background-color: lightpink">
+          <div
+            class="img-container"
+            style="
+              height: 75%;
+              /* flex: 3 3 3;  */
+              background-color: aquamarine;
+            "
+          >
+            <img
+              src="/assets/images/projects/02/Sketch_2.jpg"
+              alt="Sketch 2"
+              style="background-color: cornflowerblue; width: 100%"
+            />
+          </div>
+
+          <div
+            class="img-container"
+            style="
+              height: 25%;
+              /* flex: 1 1 1;  */
+              background-color: blueviolet;
+            "
+          >
+            <img
+              src="/assets/images/projects/02/Sketch_2.jpg"
+              alt="Sketch 2"
+              style="background-color: cornflowerblue; width: 100%"
+            />
           </div>
         </div>
-      </section>
+      </div> -->
+
+      <!-- a fullscreen image -->
+      <div class="img-container" style="margin: 12px 0px">
+        <img
+          src="/assets/images/projects/02/Frame 51.png"
+          alt="Sketches"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="bottom-group">
+        <div class="bottom-nav-container">
+          <a id="toplink" href="javascript:void(0)" class="bottomlink"> up </a>
+          <a href="projects.html" class="bottomlink">all projects</a>
+        </div>
+        <div class="bottom-nav-container">
+          <a id="bottomlinkprev" href="#" class="bottomlink"> < prev </a>
+          <a id="bottomlinknext" href="#" class="bottomlink"> next > </a>
+        </div>
+      </div>
     </main>
     <footer>
       <div>
         <p>© Copyright 2022 - Alexander Miroshin</p>
       </div>
     </footer>
+
+    <script>
+      let toplink = document.querySelector("#toplink");
+
+      toplink.addEventListener("click", navigatetotop, false);
+
+      function navigatetotop(e) {
+        document.body.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>

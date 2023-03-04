@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Architecture portfolio" />
+    <meta name="author" content="Alexander Miroshin" />
+
+    <link rel="stylesheet" href="/style-common.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="stylesheet" href="all-projects.css" />
+
+    <script src="/navbar.js"></script>
+    <script src="all-projects.js"></script>
+
+    <title>Projects - Alexander Miroshin</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">logo here</div>
+      <div class="navbar-links" id="navbar-links">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contacts</a></li>
+          <!-- <li><a href="#"></a>something else ;)</li> -->
+        </ul>
+      </div>
+      <div class="burger" id="burger" onclick="toggleMenu()"></div>
+    </nav>
+    <main>
+      <div class="viewbox">
+        <div id="projectlabel" class="project-label">project label</div>
+      </div>
+      <section class="projects-wrapper">
+        <div
+          id="project-one"
+          class="project one"
+          onmouseover="writeProjectLabel(event)"
+          onmouseleave="cleanProjectLabel(event)"
+        ></div>
+        <div
+          id="project-two"
+          class="project two"
+          onmouseover="writeProjectLabel(event)"
+          onmouseleave="cleanProjectLabel(event)"
+        ></div>
+        <div
+          id="project-three"
+          class="project three"
+          onmouseover="writeProjectLabel(event)"
+          onmouseleave="cleanProjectLabel(event)"
+        ></div>
+        <div
+          id="project-four"
+          class="project four"
+          onmouseover="writeProjectLabel(event)"
+          onmouseleave="cleanProjectLabel(event)"
+        ></div>
+        <div
+          id="project-five"
+          class="project five"
+          onmouseover="writeProjectLabel(event)"
+          onmouseleave="cleanProjectLabel(event)"
+        ></div>
+      </section>
+    </main>
+  </body>
+</html>

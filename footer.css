@@ -1,0 +1,17 @@
+footer {
+  border-top: 1px solid #333;
+  font-size: 12px;
+}
+
+footer > div {
+  display: flex;
+  margin: 0px auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+footer > div > p {
+  margin: 0px;
+}

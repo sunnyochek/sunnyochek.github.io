@@ -1,0 +1,174 @@
+main {
+  margin: 0px;
+  padding: 24px 0px 12px 0px;
+
+  letter-spacing: 0.012em;
+  line-height: 1.5em;
+  text-align: left;
+
+}
+
+.titlebox {
+  padding: 24px;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 48px;
+}
+
+.titlebox p {
+  margin: 24px 0px 0px 0px;
+}
+
+.topsection {
+  /* max-width: 3000px; */
+  /* align-self: center; */
+  margin: 12px 0px;
+  padding: 0px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: rgb(218 223 233);
+}
+
+.topsec-left {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 24px;
+  justify-items: left;
+  text-align: left;
+  /* background-color: rgb(218 223 233); */
+}
+
+.topsec-right {
+  flex: 75%;
+  display: flex;
+}
+
+.topsec-right img {
+  object-fit: cover;
+  /* object-fit: fill; */
+  /* object-fit:scale-down; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* filter: blur(10px) */
+}
+@media screen and (max-width: 900px) {
+  .topsection {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .topsec-left,
+  .topsec-right {
+    flex: 1;
+  }
+}
+
+
+.main-section {
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.max-width-one {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.proj-atributes {
+  /* margin: 0px; */
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.background-white {
+  background-color: white;
+}
+
+
+p.two-column-txt {
+  column-count: 2;
+}
+
+@media screen and (max-width: 700px) {
+  p.two-column-txt {
+    column-count: 1;
+  }
+}
+
+.two-column-flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 12px 24px;
+  margin: 0px;
+  gap: 12px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+}
+
+.two-column-flex img {
+  width: 100%;
+  /* display: flex; */
+  mix-blend-mode: multiply;
+  object-fit:cover;
+
+}
+
+#gallerybutton {
+  display: inline-block;
+  padding: 16px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+}
+
+#gallerybutton:hover {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.bottom-group {
+  padding: 24px 24px;
+}
+
+.bottom-nav-container {
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottomlink {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  color: initial;
+}
+
+.bottomlink:hover {
+  text-decoration: underline;
+}
