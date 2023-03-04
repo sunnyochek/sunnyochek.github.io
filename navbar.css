@@ -1,10 +1,11 @@
 :root {
   --navbar-height: 45px;
   --transition-timing: 200ms;
+  --my-padding: 12px;
 }
 
 .navbar {
-  padding: 12px;
+  padding: var(--my-padding);
   height: var(--navbar-height);
   display: flex;
   flex-direction: row;
@@ -37,8 +38,8 @@
 .burger {
   display: none;
   margin: 0px;
-  width: 20px;
-  height: 20px;
+  width: calc((var(--navbar-height)) - 2 * (var(--my-padding)));
+  height: calc((var(--navbar-height)) - 2 * (var(--my-padding)));
   background-color: blueviolet;
   background-size: contain;
   background-size: 100%;

@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   scroll-behavior: smooth;
   --main-color: black;
   --wrapper-height: 1920px;
   --my-margin: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
  .project-label {
