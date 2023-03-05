@@ -5,7 +5,6 @@ main {
   letter-spacing: 0.012em;
   line-height: 1.5em;
   text-align: left;
-
 }
 
 .titlebox {
@@ -70,13 +69,11 @@ h1 {
   }
 }
 
-
 .main-section {
   padding: 12px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-
 }
 
 .max-width-one {
@@ -95,7 +92,6 @@ ul.proj-atributes {
 .background-white {
   background-color: white;
 }
-
 
 p.two-column-txt {
   column-count: 2;
@@ -131,8 +127,7 @@ p.two-column-txt {
   width: 100%;
   /* display: flex; */
   mix-blend-mode: multiply;
-  object-fit:cover;
-
+  object-fit: cover;
 }
 
 #gallerybutton {

@@ -7,26 +7,42 @@
     <meta name="description" content="Architecture portfolio" />
     <meta name="author" content="Alexander Miroshin" />
 
-    <link rel="stylesheet" href="/style-common.css" />
-    <link rel="stylesheet" href="/navbar.css" />
-    <link rel="stylesheet" href="all-projects.css" />
+    <link rel="stylesheet" href="/styles/style-common.css" />
+    <link rel="stylesheet" href="/styles/all-projects.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
 
-    <script src="/navbar.js"></script>
-    <script src="all-projects.js"></script>
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/all-projects.js"></script>
 
     <title>Projects - Alexander Miroshin</title>
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar-logo">logo here</div>
+      <div class="navbar-logo">
+        <img src="/assets/images/mylogo.png" alt="logo" />
+      </div>
       <div class="navbar-links" id="navbar-links">
         <ul>
           <li><a href="#">home</a></li>
           <li><a href="#">about</a></li>
           <li><a href="#">contacts</a></li>
-          <!-- <li><a href="#"></a>something else ;)</li> -->
+          <li class="insta-nav-icon">
+            <a href="#">
+              <img
+                src="/assets/icons/instagram-svgrepo-com.svg"
+                alt="instagram link"
+              />
+            </a>
+          </li>
         </ul>
       </div>
+      <!-- <div class="insta-nav-icon">
+        <img
+          src="/assets/icons/instagram-svgrepo-com.svg"
+          alt="instagram link"
+        />
+      </div> -->
       <div class="burger" id="burger" onclick="toggleMenu()"></div>
     </nav>
     <main>
@@ -66,5 +82,8 @@
         ></div>
       </section>
     </main>
+    <footer>
+      <p>&copy; All rights reserved.</p>
+    </footer>
   </body>
 </html>

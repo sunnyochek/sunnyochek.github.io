@@ -1,17 +1,18 @@
 footer {
-  border-top: 1px solid #333;
+  /* border-top: 1px solid var(--main-color); */
   font-size: 12px;
+  padding: var(--my-padding);
 }
 
-footer > div {
+/* footer > div { 
   display: flex;
   margin: 0px auto;
   padding: 24px;
   display: flex;
   flex-direction: row;
   justify-content: left;
-}
+} */
 
-footer > div > p {
+footer  p {
   margin: 0px;
 }

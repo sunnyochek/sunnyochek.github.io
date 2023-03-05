@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
-/* for degugging */
-/* * {background: rgb( 200 300 20/ 0.1) !important;} */
+:root {
+  scroll-behavior: smooth;
+
+  --main-color: black;
+  --background-color: white;
+
+  --my-padding: 12px;
+}
 
 @font-face {
   font-family: "SF Pro Display";
@@ -19,3 +25,6 @@ body {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
 }
+
+/* for degugging */
+/* * {background: rgb( 200 300 20/ 0.1) !important;} */
