@@ -3,15 +3,13 @@
   --transition-timing: 200ms;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 header {
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
-
   position: sticky;
   top: 0;
   z-index: 100;
@@ -25,13 +23,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
-  /* z-index: 98; */
+  z-index: 98;
 }
 
 .navbar-b {
   /* visibility: hidden; */
   display: none;
   z-index: 97;
+  overflow: hidden;
 }
 
 .navbar-a .navbar-links-a ul {
@@ -42,7 +41,8 @@ header {
   gap: 12px;
 }
 
-.navbar-a .navbar-links-a ul li {
+.navbar-a li,
+.navbar-b li {
   list-style: none;
 }
 
@@ -69,6 +69,20 @@ header {
   background-color: var(--main-color);
   color: var(--background-color);
   color: white;
+}
+
+li.insta-nav-icon a {
+  opacity: 0.5;
+}
+
+li.insta-nav-icon a:hover {
+  background-color: initial;
+  color: initial;
+  opacity: 1;
+}
+
+li.insta-nav-icon a:active {
+  scale: 1.1;
 }
 
 .navbar-logo {
@@ -133,25 +147,38 @@ display: flex;
     display: block;
     position: absolute;
     /* width: 100vh; */
-    width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: all var(--transition-timing);
-    z-index: 99;
-    top: var(--navbar-height);
+    
+    /* z-index: 99; */
+    /* top: var(--navbar-height); */
     /* top: 0px; */
+    /* overflow: hidden; */
+    padding: 60px 12px 12px 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 0;
+    padding: 0;
 
-    transform: translateX(100%);
+    
+    transition: all var(--transition-timing);
+    width: 0%;
+    margin-left: 100%;
   }
 
   .navbar-b.active {
-    transform: translateX(0vh);
+    width: 100%;
+    margin-left: 0%;
   }
 
   .navbar-b .navbar-b-links {
+    padding: 60px 12px 12px 12px;
+    /* transition: all var(--transition-timing); */
+    /* transform: translateX(100%); */
+
   }
 
   .navbar-b.active .navbar-b-links {
+    /* transform: translateX(0vh); */
+
   }
 
   .navbar-b .navbar-b-links ul {
@@ -159,11 +186,12 @@ display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 0;
+    margin: 0;
   }
 
   .navbar-b .navbar-b-links ul li {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 12px 0px 12px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* margin: 0px 12px 0px 12px; */
   }
 }
