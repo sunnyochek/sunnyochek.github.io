@@ -3,10 +3,6 @@
   --transition-timing: 200ms;
 }
 
-/* body {
-  overflow-x: hidden;
-} */
-
 header {
   display: flex;
   flex-direction: column;
@@ -27,7 +23,6 @@ header {
 }
 
 .navbar-b {
-  /* visibility: hidden; */
   display: none;
   z-index: 97;
   overflow: hidden;
@@ -46,12 +41,6 @@ header {
   list-style: none;
 }
 
-/* .navbar .navbar-links ul li:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-} */
-
 .navbar-a a,
 .navbar-b a {
   text-decoration: none;
@@ -60,7 +49,6 @@ header {
 
 .navbar-a a:visited,
 .navbar-b a:visited {
-  /* text-decoration: none; */
   color: var(--main-color);
 }
 
@@ -98,8 +86,8 @@ li.insta-nav-icon a:active {
   margin: 0px;
   width: calc((var(--navbar-height)) - 2 * (var(--my-padding)));
   height: calc((var(--navbar-height)) - 2 * (var(--my-padding)));
-  /* background-color: blueviolet; */
   background-position: 50% 50%;
+  /* background-color: blueviolet; */
 
   background-image: url(/assets/icons/burger-simple-svgrepo-com.svg);
   transform: rotate(0deg);
@@ -124,12 +112,7 @@ li.insta-nav-icon a:active {
   height: 21px;
 }
 
-/* .insta-nav-icon > a {
-display: flex;
-} */
-
 .insta-nav-icon > a > img {
-  /* margin: auto; */
   width: 100%;
   scale: 1.2;
 }
@@ -146,19 +129,12 @@ display: flex;
   .navbar-b {
     display: block;
     position: absolute;
-    /* width: 100vh; */
     height: 100vh;
-    
-    /* z-index: 99; */
-    /* top: var(--navbar-height); */
-    /* top: 0px; */
-    /* overflow: hidden; */
     padding: 60px 12px 12px 12px;
     background-color: rgba(255, 255, 255, 0.8);
     margin-right: 0;
     padding: 0;
 
-    
     transition: all var(--transition-timing);
     width: 0%;
     margin-left: 100%;
@@ -171,14 +147,6 @@ display: flex;
 
   .navbar-b .navbar-b-links {
     padding: 60px 12px 12px 12px;
-    /* transition: all var(--transition-timing); */
-    /* transform: translateX(100%); */
-
-  }
-
-  .navbar-b.active .navbar-b-links {
-    /* transform: translateX(0vh); */
-
   }
 
   .navbar-b .navbar-b-links ul {
@@ -187,11 +155,5 @@ display: flex;
     gap: 12px;
     padding: 0;
     margin: 0;
-  }
-
-  .navbar-b .navbar-b-links ul li {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* margin: 0px 12px 0px 12px; */
   }
 }
