@@ -1,7 +1,7 @@
 function toggleMenu() {
     var burger = document.getElementById("burger");
-    var navBarLinks = document.getElementById("navbar-links");
+    var navBarB = document.getElementById("navbar-b");
   
     burger.classList.toggle("toggled");
-    navBarLinks.classList.toggle("active");
+    navBarB.classList.toggle("active");
   }
