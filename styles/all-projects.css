@@ -47,21 +47,20 @@
 }
 
 .project.three {
+  aspect-ratio: 2/3;
+  width: 25%;
+  margin-top: 100%;
+  margin-left: 70%;
+  background-color: rgb(142, 171, 124);
+}
+
+.project.four {
   aspect-ratio: 9/16;
   width: 40%;
   margin-top: 160%;
   margin-left: 15%;
   background-color: rgb(216, 75, 185);
-}
-
-.project.four {
-  aspect-ratio: 2/3;
-  width: 25%;
-  margin-top: 100%;
-  margin-left: 70%;
-  /* right: 15%; */
-  background-color: rgb(142, 171, 124);
-}
+}  
 
 .project.five {
   aspect-ratio: 1/1;

@@ -150,7 +150,7 @@ li.insta-nav-icon a:active {
     margin-left: 100%;
   }
 
-  .navbar-b.active {
+  .navbar-b.toggled {
     width: 100%;
     margin-left: 0%;
   }
