@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    margin: 0;
+    padding: 12px;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+a > button {
+    text-align: center;
+    width: 100%;
+}
