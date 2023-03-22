@@ -5,8 +5,7 @@ main {
 }
 
 section {
-    padding: 24px;
-
+  padding: 24px;
 }
 
 .buttons-container {
@@ -24,12 +23,11 @@ section {
   padding: 12px;
   flex: 30%;
   background-color: white;
-  
+
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-  "Arial", sans-serif;
+    "Arial", sans-serif;
   font-size: 16px;
   /* font-weight: 600; */
-
 }
 
 .buttons-container button:hover,
