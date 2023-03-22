@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/style-common.css" />
+    <link rel="stylesheet" href="/styles/cv.css" />
+
+    <script src="/scripts/CV.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="buttons-container">
+      <button onclick="openTab(event, 'about')">about</button>
+      <button onclick="openTab(event, 'experience')">experience</button>
+      <button onclick="openTab(event, 'contact-me')">contact-me</button>
+    </div>
+    <main>
+      <section class="tab about" id="about" style="display: block">
+        <p class="hello">Hi! My name is</p>
+        <h1>Alexander Miroshin</h1>
+        <p>
+          And i'm looking for a freelance/part-time job as an Architecture
+          Designer or an internship for a junior position as a concept artist
+          (film and games). Right now i work remotelly at
+          <a href="https://www.i-npz.ru/en/home-en/">KNGK-INPZ</a>. My location
+          is Podgorica, Montenegro and i'm ready to work all over the world.
+        </p>
+      </section>
+      <section class="tab experience" id="experience" style="display: none">
+        <p class="hello"></p>
+        <h1>Experience and expertise</h1>
+        <p>
+          There should be some words about my education, job experience and
+          skills.
+        </p>
+      </section>
+      <section class="tab contact-me" id="contact-me" style="display: none">
+        <p class="hello"></p>
+        <h1>Contact me</h1>
+        <p>Do you want to team up with me?</p>
+        <ul>
+          <li>mail</li>
+          <li>telegram</li>
+          <li>instagram</li>
+          <li>twitter</li>
+          <li>artstation</li>
+          <li>github</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

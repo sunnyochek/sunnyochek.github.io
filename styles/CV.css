@@ -1,0 +1,63 @@
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+    padding: 24px;
+
+}
+
+.buttons-container {
+  /* background-color: aqua; */
+  display: flex;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.buttons-container button {
+  text-decoration: none;
+  border: none;
+  padding: 12px;
+  flex: 30%;
+  background-color: white;
+  
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+  "Arial", sans-serif;
+  font-size: 16px;
+  /* font-weight: 600; */
+
+}
+
+.buttons-container button:hover,
+.buttons-container button.active {
+  background-color: black;
+  background-color: rgb(249, 249, 103);
+  /* color: white; */
+}
+
+p.hello {
+  margin: 0;
+  color: rgb(175, 175, 175);
+  /* margin-bottom: 6px; */
+}
+
+.about h1 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.about h1 + p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.about h1 + p a {
+  /* background-color: cadetblue; */
+  color: blue;
+  /* outline-style: none; */
+  text-decoration: initial;
+}

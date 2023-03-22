@@ -39,12 +39,22 @@ header {
 .navbar-a li,
 .navbar-b li {
   list-style: none;
+  display: flex;
+  align-items: center;
+    /* object-position: 50% 50%; */
+    /* transform-origin: 0% 0%; */
+
 }
 
 .navbar-a a,
 .navbar-b a {
   text-decoration: none;
   padding: 0;
+  /* display: flex; */
+  /* align-items: center; */
+  /* align-self: center; */
+  /* content: icon; */
+  /* object-position: 50% 50%; */
 }
 
 .navbar-a a:visited,
@@ -63,11 +73,15 @@ header {
 .navbar-b a:active {
   /* width: 110%; */
   scale: 1.1;
+  /* font-size: 110%; */
 }
 
-/* li.insta-nav-icon a {
-  opacity: 0.5;
-} */
+li.insta-nav-icon a {
+  display: flex;
+  /* align-items: baseline; */
+  /* align-self: center; */
+
+}
 
 li.insta-nav-icon a:hover {
   background-color: initial;
