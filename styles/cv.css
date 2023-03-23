@@ -5,6 +5,7 @@ main {
 }
 
 main > nav {
+  margin-bottom: 36px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -15,7 +16,8 @@ main > nav > a {
 }
 
 section {
-  padding: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .buttons-container {
@@ -24,7 +26,7 @@ section {
   gap: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .buttons-container button {
