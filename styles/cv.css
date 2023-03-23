@@ -37,6 +37,12 @@ section {
   /* color: white; */
 }
 
+.buttons-container button:focus-visible {
+  outline: rgb(249, 249, 103) solid 2px;
+  outline-offset: -2px;
+  /* border: 2px solid yellow; */
+}
+
 p.hello {
   margin: 0;
   color: rgb(175, 175, 175);
