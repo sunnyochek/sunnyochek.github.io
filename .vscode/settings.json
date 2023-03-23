@@ -1,29 +1,18 @@
 {
     "workbench.colorCustomizations": {
-      // "tab.activeBackground": "#ff0000"
     },
   
     "editor.tokenColorCustomizations": {
       "[**]": {
         "comments": "#878787",
-        // "variables": "#50a57f",
-        // "numbers": "#4faaeb",
         "numbers": "#f2a76a",
         "strings": "#f2a76a",
-        // "strings": "#f8e763",
-        // "strings": "#7a8ecf",
         "functions": "#e8ee74",
-        // "functions": "#ed885d",
-        // "types": "#FF0000",
-        // "types": "#97bde2",
-        // "keywords": "#FF0000",
-  
         "textMateRules": [
           {
             "scope": ["entity.other.attribute-name"],
             "settings": {
               "foreground": "#6dc295"
-              // "foreground": "#cc9ed5"
             }
           },
           {
@@ -33,7 +22,6 @@
           {
             "scope": ["entity.name.tag", "entity.other.attribute-name.class.css"],
             "settings": {
-              // "foreground": "#e76e80"
               "foreground": "#7ad3f3"
             }
           },
