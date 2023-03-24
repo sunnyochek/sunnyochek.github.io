@@ -2,12 +2,13 @@ main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  padding: 24px;
 }
 
 main > nav {
   margin-bottom: 36px;
-  padding-left: 24px;
-  padding-right: 24px;
+  /* padding-left: 24px; */
+  /* padding-right: 24px; */
 }
 
 main > nav > a {
@@ -16,17 +17,20 @@ main > nav > a {
 }
 
 section {
-  padding-left: 24px;
-  padding-right: 24px;
+  /* padding-left: 24px; */
+  /* padding-right: 24px; */
 }
 
 .buttons-container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   /* background-color: aqua; */
   display: flex;
   gap: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 36px;
+  /* margin-bottom: 36px; */
 }
 
 .buttons-container button {
@@ -34,9 +38,9 @@ section {
   border: none;
   padding: 12px;
   flex: 30%;
-  background-color: var(--background-color);
+  background-color: var(--color-background);
   color: initial;
-  color: var(--main-color);
+  color: var(--color-main);
 
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
@@ -46,13 +50,13 @@ section {
 
 .buttons-container button:hover,
 .buttons-container button.active {
-  background-color: black;
-  background-color: rgb(249, 249, 103);
+  /* background-color: black; */
+  background-color: var(--color-secondary-one);
   /* color: white; */
 }
 
 .buttons-container button:focus-visible {
-  outline: rgb(249, 249, 103) solid 2px;
+  outline: var(--color-secondary-one) solid 2px;
   outline-offset: -2px;
   /* border: 2px solid yellow; */
 }
@@ -83,4 +87,14 @@ h1 + p a {
   color: blue;
   /* outline-style: none; */
   text-decoration: initial;
+}
+
+ul.links {
+  padding: 0;
+  margin: 0;
+}
+
+ul.links li {
+  list-style-type: none;
+  font-size: 24px;
 }

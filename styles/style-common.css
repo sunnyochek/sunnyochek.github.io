@@ -7,8 +7,9 @@
 :root {
   scroll-behavior: smooth;
 
-  --main-color: black;
-  --background-color: white;
+  --color-main: black;
+  --color-background: white;
+  --color-secondary-one: rgb(249, 249, 103);
 
   --my-padding: 12px;
 }
