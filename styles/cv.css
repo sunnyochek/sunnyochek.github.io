@@ -3,34 +3,18 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 24px;
-}
-
-main > nav {
-  margin-bottom: 36px;
-  /* padding-left: 24px; */
-  /* padding-right: 24px; */
-}
-
-main > nav > a {
-  text-decoration: initial;
-  color: lightgrey;
-}
-
-section {
-  /* padding-left: 24px; */
-  /* padding-right: 24px; */
+  /* padding-bottom: 48px; */
+  margin-bottom: 24px;
 }
 
 .buttons-container {
   position: fixed;
   width: 100%;
   bottom: 0;
-  /* background-color: aqua; */
   display: flex;
   gap: 0;
   padding: 0;
   margin: 0;
-  /* margin-bottom: 36px; */
 }
 
 .buttons-container button {
@@ -45,47 +29,52 @@ section {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
   font-size: 16px;
-  /* font-weight: 600; */
 }
 
 .buttons-container button:hover,
 .buttons-container button.active {
-  /* background-color: black; */
   background-color: var(--color-secondary-one);
-  /* color: white; */
 }
 
 .buttons-container button:focus-visible {
   outline: var(--color-secondary-one) solid 2px;
   outline-offset: -2px;
-  /* border: 2px solid yellow; */
 }
+
+nav.back {
+  margin-bottom: 36px;
+}
+
+nav.back > a {
+  text-decoration: initial;
+  color: lightgrey;
+  transition: color 0.25s;
+
+}
+
+nav.back > a:hover {
+  color: initial;
+  transition: color 0.25s;
+}
+
 
 p.hello {
   margin: 0;
   color: rgb(175, 175, 175);
-  /* margin-bottom: 6px; */
 }
-
-/* .experience h1,
-.contact-me h1 {
-  margin-top: 19px;
-} */
 
 h1 {
   margin-top: 0;
   font-size: 48px;
 }
 
-h1 + p {
+h1 ~ p {
   font-size: 24px;
   margin-top: 0;
 }
 
-h1 + p a {
-  /* background-color: cadetblue; */
+h1 ~ p a {
   color: blue;
-  /* outline-style: none; */
   text-decoration: initial;
 }
 
@@ -94,7 +83,18 @@ ul.links {
   margin: 0;
 }
 
-ul.links li {
+ul.links > li {
   list-style-type: none;
-  font-size: 24px;
+  margin-bottom: 6px;
+  /* font-size: 24px; */
+
+}
+
+ul.links > li > a {
+  color: initial;
+  text-decoration: none;
+}
+
+ul.links > li > a:hover {
+  background-color: var(--color-secondary-one);
 }
