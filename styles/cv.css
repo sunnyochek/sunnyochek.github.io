@@ -1,5 +1,5 @@
 .main-container {
-  position: fixed;
+  /* position: sticky; */
 
   display: flex;
   flex-direction: row-reverse;
@@ -21,7 +21,7 @@ main {
 }
 
 .buttons-container {
-  position: sticky;
+  /* position: sticky; */
   height: min-content;
   margin-top: 110px;
   flex: 20%;
