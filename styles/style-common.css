@@ -7,24 +7,25 @@
 :root {
   scroll-behavior: smooth;
 
-  --color-main: black;
-  --color-background: white;
-  --color-secondary-one: rgb(249, 249, 103);
+  --black: black;
+  --yellow: rgb(255, 243, 79);
+  --medium-green: rgb(119, 221, 134);
 
   --my-padding: 12px;
 }
 
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/assets/fonts/SF_Pro_Display/SFPRODISPLAYREGULAR.OTF")
-    format("opentype");
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
 }
 
 /* for degugging */

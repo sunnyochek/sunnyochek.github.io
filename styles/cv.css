@@ -1,20 +1,31 @@
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  background-color: var(--yellow);
+
+  /* max-width: 960px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+
+}
+
 main {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 80%;
   padding: 24px;
-  /* padding-bottom: 48px; */
-  margin-bottom: 24px;
+  overflow-y: auto;
+  background-color: white;
 }
 
 .buttons-container {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  flex: 20%;
+  height: min-content;
   display: flex;
+  flex-direction: column;
   gap: 0;
   padding: 0;
   margin: 0;
+  margin-top: 110px;
 }
 
 .buttons-container button {
@@ -22,22 +33,27 @@ main {
   border: none;
   padding: 12px;
   flex: 30%;
-  background-color: var(--color-background);
-  color: initial;
-  color: var(--color-main);
+  background-color: var(--yellow);
+  color: var(--black);
 
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "Inter", sans-serif;
+  /* font-weight: 450; */
   font-size: 16px;
+  text-transform: lowercase;
 }
 
 .buttons-container button:hover,
 .buttons-container button.active {
-  background-color: var(--color-secondary-one);
+  /* background-color: var(--yellow); */
+  background-color: white;
+}
+
+.buttons-container button:hover {
+  cursor: pointer;
 }
 
 .buttons-container button:focus-visible {
-  outline: var(--color-secondary-one) solid 2px;
+  outline: var(--black) solid 2px;
   outline-offset: -2px;
 }
 
@@ -49,7 +65,6 @@ nav.back > a {
   text-decoration: initial;
   color: lightgrey;
   transition: color 0.25s;
-
 }
 
 nav.back > a:hover {
@@ -57,25 +72,71 @@ nav.back > a:hover {
   transition: color 0.25s;
 }
 
-
 p.hello {
   margin: 0;
   color: rgb(175, 175, 175);
 }
+
+/* h1, h2, h3 {
+  font-family: "Space mono", monospace;
+} */
 
 h1 {
   margin-top: 0;
   font-size: 48px;
 }
 
-h1 ~ p {
-  font-size: 24px;
+h2 {
   margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h1 ~ p {
+  margin-top: 0;
+  font-size: 24px;
 }
 
 h1 ~ p a {
   color: blue;
+  color: var(--medium-green);
   text-decoration: initial;
+}
+
+.experience-item {
+/* color: blueviolet; */
+font-size: 24px;
+margin-top: 0;
+margin-bottom: 72px;
+}
+
+.experience-date {
+  margin-top: 0;
+  margin-bottom: 36px;
+  /* color: rgb(175, 175, 175); */
+  color: var(--black);
+  font-size: 18px;
+}
+
+p.experience-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.experience-item ul {
+  margin-top: 0;
+  padding-left: 12px;
+}
+
+.experience-item ul > li {
+  /* color: violet; */
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.experience-item ul > li::marker {
+  content: '- ';
 }
 
 ul.links {
@@ -86,8 +147,7 @@ ul.links {
 ul.links > li {
   list-style-type: none;
   margin-bottom: 6px;
-  /* font-size: 24px; */
-
+  font-size: 18px;
 }
 
 ul.links > li > a {
@@ -96,5 +156,19 @@ ul.links > li > a {
 }
 
 ul.links > li > a:hover {
-  background-color: var(--color-secondary-one);
+  background-color: var(--yellow);
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .buttons-container {
+    width: 100%;
+    flex-direction: row;
+    flex: 0;
+    margin-top: 0;
+  }
 }
