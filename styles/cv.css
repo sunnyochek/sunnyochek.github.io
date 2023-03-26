@@ -116,7 +116,7 @@ margin-bottom: 72px;
 
 .experience-date {
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   /* color: rgb(175, 175, 175); */
   color: var(--black);
   font-size: 18px;
@@ -124,12 +124,14 @@ margin-bottom: 72px;
 
 p.experience-title {
   margin-top: 0;
+  margin-bottom: 24px;
   font-size: 18px;
 }
 
 .experience-item ul {
   margin-top: 0;
   padding-left: 12px;
+  list-style-type: none;
 }
 
 .experience-item ul > li {
