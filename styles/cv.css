@@ -156,6 +156,7 @@ ul.links > li > a:hover {
   .main-container {
     display: block;
     height: 100%;
+    background-color: white;
   }
   
   main {
