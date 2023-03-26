@@ -129,6 +129,7 @@ p.experience-title {
 }
 
 .experience-item ul > li::marker {
+  color: blueviolet;
   content: '- ';
 }
 
@@ -157,12 +158,6 @@ ul.links > li > a:hover {
     display: block;
     height: 100%;
     background-color: white;
-  }
-  
-  main {
-    /* height: 100%; */
-    /* overflow-y: initial; */
-    /* margin-bottom: 44px; */
   }
 
   .buttons-container {
