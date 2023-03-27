@@ -1,10 +1,20 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+
 .main-container {
   display: flex;
   flex-direction: row-reverse;
   height: 100vh;
   width: 100%;
   background-color: var(--yellow);
-
 }
 
 main {
@@ -14,13 +24,14 @@ main {
   background-color: white;
 }
 
+
+
 .buttons-container {
   height: min-content;
   margin-top: 110px;
   flex: 20%;
   display: flex;
   flex-direction: column;
-
 }
 
 .buttons-container button {
@@ -53,35 +64,34 @@ main {
 }
 
 nav.back {
-  margin-bottom: 36px;
+  margin-bottom: 60px;
 }
 
 nav.back > a {
   text-decoration: initial;
   color: lightgrey;
-  transition: color 0.25s;
+  /* transition: color 0.25s; */
+  font-size: 15px;
 }
 
 nav.back > a:hover {
   color: initial;
-  transition: color 0.25s;
+  /* transition: color 0.25s; */
 }
 
 p.hello {
   margin: 0;
   color: rgb(175, 175, 175);
+  font-size: 18px;
+
 }
 
 h1 {
   margin-top: 0;
-  font-size: 48px;
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 6px;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: -0.045em;
+  line-height: 1em;
+  color: var(--black);
 }
 
 h1 ~ p {
@@ -89,23 +99,43 @@ h1 ~ p {
   font-size: 24px;
 }
 
-h1 ~ p a {
-  color: blue;
-  color: var(--medium-green);
-  text-decoration: initial;
+h2 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--black);
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 650;
+  color: var(--black);
+}
+
+.experience-item a {
+  text-decoration: initial !important;
+  color: var(--black);
+}
+
+.experience-item a:hover {
+  /* color: var(--medium-green); */
+  color:  var(--red);
 }
 
 .experience-item {
-/* color: blueviolet; */
-font-size: 24px;
-margin-top: 0;
-margin-bottom: 72px;
+  /* color: blueviolet; */
+  /* font-size: 24px; */
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .experience-date {
   margin-top: 0;
-  margin-bottom: 24px;
-  /* color: rgb(175, 175, 175); */
+  margin-bottom: 3px;
+  /* color: rgb(223 223 223); */
   color: var(--black);
   font-size: 18px;
 }
@@ -118,20 +148,21 @@ p.experience-title {
 
 .experience-item ul {
   margin-top: 0;
-  padding-left: 12px;
-  /* list-style-type: none; */
+  padding-left: 18px;
+  /* list-style-type: "- " ; */
+  list-style-type: "\2198  " ;  
 }
 
 .experience-item ul > li {
   /* color: violet; */
-  font-size: 18px;
+  font-size: 15px;
   line-height: 150%;
 }
 
-.experience-item ul > li::marker {
+/* .experience-item ul > li::marker {
   color: blueviolet;
-  content: '- ';
-}
+  content: "- ";
+} */
 
 ul.links {
   padding: 0;
@@ -153,6 +184,17 @@ ul.links > li > a:hover {
   background-color: var(--yellow);
 }
 
+.columns-flow-two-three {
+  columns: 3;
+  column-gap: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  .columns-flow-two-three {
+    columns: 2;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .main-container {
     display: block;
@@ -167,4 +209,6 @@ ul.links > li > a:hover {
     flex-direction: row;
     margin: 0;
   }
+
+
 }
