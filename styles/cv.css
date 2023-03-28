@@ -99,10 +99,14 @@ h2 {
 
 h3 {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 6px;
   font-size: 32px;
   font-weight: 650;
   color: var(--black);
+}
+
+.experience {
+  margin-bottom: 108px;
 }
 
 .experience-item a {
