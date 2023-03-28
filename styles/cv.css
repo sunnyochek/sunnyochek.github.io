@@ -178,13 +178,44 @@ ul.links > li > a:hover {
   background-color: var(--yellow);
 }
 
-.columns-flow-two-three {
+.columns-flow-big {
+  margin-bottom: 36px;
   columns: 3;
   column-gap: 24px;
+  font-size: 24px;
+
 }
 
-@media screen and (max-width: 1000px) {
-  .columns-flow-two-three {
+.columns-flow-big p {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.columns-flow-small {
+  /* margin-bottom: 36px; */
+  columns: 3;
+  column-gap: 30px;
+  /* font-size: 24px; */
+
+}
+
+/* .columns-flow-big p {
+  margin: 0;
+  margin-bottom: 18px;
+} */
+
+@media screen and (max-width: 1400px) {
+  .columns-flow-big {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .columns-flow-big {
+    columns: 1;
+  }
+
+  .columns-flow-small {
     columns: 2;
   }
 }
@@ -203,6 +234,10 @@ ul.links > li > a:hover {
     flex-direction: row;
     margin: 0;
   }
+}
 
-
+@media screen and (max-width: 400px) {
+  .columns-flow-small {
+    columns: 1;
+  }
 }
