@@ -22,12 +22,13 @@
 .project {
   display: block;
   position: absolute;
-  /* padding: var(--my-padding); */
   overflow: hidden;
+  filter: grayscale(1);
 }
 
 .project:hover {
   cursor: pointer;
+  filter: grayscale(0);
 }
 
 .project.one {
@@ -76,16 +77,20 @@
   background-color: rgb(64, 73, 82);
 }
 
-/* .project:last-child {
-  background-color: yellow;
-} */
-
 .project img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  image-rendering: optimizeQuality;
 }
+
+.project {
+  filter: grayscale(1);
+}
+
+.project:hover {
+ filter: grayscale(0);
+}
+
 
 /* .project img:active {
   scale: 1.05;
