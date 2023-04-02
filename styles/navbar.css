@@ -28,7 +28,7 @@ header {
   overflow: hidden;
 }
 
-.navbar-a .navbar-links-a ul {
+.navbar-a ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -36,33 +36,28 @@ header {
   gap: 12px;
 }
 
-.navbar-a li,
-.navbar-b li {
+header li {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.navbar-a a,
-.navbar-b a {
+:is(.navbar-a, .navbar-b) a {
   text-decoration: none;
   padding: 0;
   color: var(--black);
 }
 
-.navbar-a a:visited,
-.navbar-b a:visited {
+:is(.navbar-a, .navbar-b) a:visited {
   color: var(--black);
 }
 
-.navbar-a a:hover,
-.navbar-b a:hover {
+:is(.navbar-a, .navbar-b) a:hover {
   background-color: var(--black);
   color: white;
 }
 
-.navbar-a a:active,
-.navbar-b a:active {
+:is(.navbar-a, .navbar-b) a:active {
   scale: 1.1;
 }
 
@@ -76,10 +71,6 @@ li.insta-nav-icon a:hover {
   opacity: 1;
 }
 
-/* li.insta-nav-icon a:active {
-  scale: 1.1;
-} */
-
 .navbar-logo {
   display: flex;
 }
@@ -88,8 +79,8 @@ li.insta-nav-icon a:hover {
   background-color: white;
 }
 
-.navbar-logo > img {
-  height: 24px;
+.navbar-logo img {
+  height: 30px;
 }
 
 .burger {
@@ -104,7 +95,6 @@ li.insta-nav-icon a:hover {
   background-size: 120%;
 
   transition: all var(--transition-timing);
-  /* background-color: blueviolet; */
 }
 
 .burger.toggled {
@@ -118,12 +108,10 @@ li.insta-nav-icon a:hover {
 }
 
 .insta-nav-icon {
-  display: flex;
   width: 21px;
-  height: 21px;
 }
 
-.insta-nav-icon > a > img {
+.insta-nav-icon img {
   width: 100%;
   scale: 1.2;
 }
@@ -133,7 +121,7 @@ li.insta-nav-icon a:hover {
     display: block;
   }
 
-  .navbar-a .navbar-links-a {
+  .navbar-links-a {
     display: none;
   }
 
@@ -141,25 +129,21 @@ li.insta-nav-icon a:hover {
     display: block;
     position: absolute;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-right: 0;
-    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
 
-    transition: all var(--transition-timing);
     width: 0%;
-    margin-left: 100%;
+    transition: all var(--transition-timing);
   }
 
   .navbar-b.toggled {
     width: 100%;
-    margin-left: 0%;
   }
 
-  .navbar-b .navbar-b-links {
+  .navbar-b-links {
     padding: 60px 12px 12px 12px;
   }
 
-  .navbar-b .navbar-b-links ul {
+  .navbar-b-links ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
