@@ -20,9 +20,10 @@
 }
 
 .project {
-  display: block;
+  /* display: block; */
+  /* overflow: hidden; */
+  display: flex;
   position: absolute;
-  overflow: hidden;
   filter: grayscale(1);
 }
 
@@ -30,6 +31,10 @@
   cursor: pointer;
   filter: grayscale(0);
 }
+
+/* .project:hover {
+  filter: grayscale(0);
+ } */
 
 .project.one {
   aspect-ratio: 4/5;
@@ -83,18 +88,11 @@
   object-fit: cover;
 }
 
-.project {
+/* .project {
   filter: grayscale(1);
-}
-
-.project:hover {
- filter: grayscale(0);
-}
-
-
-/* .project img:active {
-  scale: 1.05;
 } */
+
+
 
 @media screen and (max-width: 700px) {
   .projects-wrapper {
