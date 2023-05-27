@@ -3,7 +3,6 @@
 }
 
 .project-label {
-  /* position: absolute; */
   position: fixed;
   bottom: var(--my-padding);
   right: var(--my-padding);
@@ -20,8 +19,6 @@
 }
 
 .project {
-  /* display: block; */
-  /* overflow: hidden; */
   display: flex;
   position: absolute;
   filter: grayscale(1);
@@ -32,19 +29,13 @@
   filter: grayscale(0);
 }
 
-/* .project:hover {
-  filter: grayscale(0);
- } */
-
 .project.one {
   aspect-ratio: 4/5;
   width: 35%;
-  /* margin: 0% 10% 50% 40%; */
   margin-left: 50%;
   margin-top: 5%;
   background-color: aquamarine;
-  /* background-image: url('/assets/images/projects/01/cam01.jpg'); */
-  /* background-size: cover; */
+
   
 }
 
@@ -53,7 +44,6 @@
   width: 65%;
   margin-top: 80%;
   right: 10%;
-  /* margin-right: 5%; */
   background-color: rgb(115, 75, 216);
 }
 
@@ -88,19 +78,12 @@
   object-fit: cover;
 }
 
-/* .project {
-  filter: grayscale(1);
-} */
-
-
-
 @media screen and (max-width: 700px) {
   .projects-wrapper {
     height: fit-content;
-
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--my-padding);
   }
 
   .projects-wrapper > div {
@@ -110,7 +93,7 @@
     height: 100%;
   }
 
-  .project.one,
+  /* .project.one,
   .project.two,
   .project.three,
   .project.four,
@@ -120,6 +103,19 @@
     aspect-ratio: 1/1;
     margin: 0;
     width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  } */
+
+  .project:is(
+    .one, .two, .three, .four, .five
+    ) {
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 100%;
+    margin: 0;
     left: 0;
     right: 0;
     top: 0;

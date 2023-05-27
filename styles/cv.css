@@ -15,7 +15,7 @@ main {
 
 .buttons-container {
   height: min-content;
-  margin-top: 110px;
+  margin-top: 94px;
   flex: 20%;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ main {
   padding: 12px;
   flex: 30%;
   background-color: var(--yellow);
-  color: var(--black);
+  /* color: white; */
 
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -37,6 +37,7 @@ main {
 .buttons-container button:hover,
 .buttons-container button.active {
   background-color: white;
+  color: var(--black);
 }
 
 .buttons-container button:hover {
@@ -55,7 +56,7 @@ nav.back {
 nav.back > a {
   text-decoration: initial;
   color: lightgrey;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 nav.back > a:hover {
@@ -69,7 +70,8 @@ p.hello {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 6px;
+  margin-bottom: 18px;
   font-size: 60px;
   letter-spacing: -0.045em;
   line-height: 1em;
@@ -83,7 +85,7 @@ h1 ~ p {
 
 h2 {
   margin-top: 0;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   font-size: 18px;
   font-weight: 650;
   color: var(--black);
@@ -128,7 +130,7 @@ h3 {
   font-size: 18px;
 }
 
-p.experience-title {
+.experience-title {
   margin-top: 0;
   margin-bottom: 24px;
   font-size: 18px;
@@ -137,22 +139,16 @@ p.experience-title {
 .experience-item ul {
   margin-top: 0;
   padding-left: 18px;
+  font-size: 18px;
+  line-height: 1.5em;
   list-style-type: "\2198  ";
-}
-
-.experience-item ul > li {
-  font-size: 15px;
-  line-height: 150%;
 }
 
 ul.links {
   padding: 0;
   margin: 0;
-}
-
-ul.links > li {
+  line-height: 150%;
   list-style-type: none;
-  margin-bottom: 6px;
   font-size: 18px;
 }
 
@@ -168,8 +164,8 @@ ul.links > li > a:hover {
 .columns-flow-big {
   margin-bottom: 36px;
   columns: 3;
-  column-gap: 24px;
-  font-size: 24px;
+  column-gap: 18px;
+  font-size: 18px;
 }
 
 .columns-flow-big p {
@@ -178,11 +174,15 @@ ul.links > li > a:hover {
 
 .columns-flow-small {
   columns: 3;
-  column-gap: 30px;
+  column-gap: 36px;
 }
 
 @media screen and (max-width: 1400px) {
   .columns-flow-big {
+    columns: 2;
+  }
+
+  .columns-flow-small {
     columns: 2;
   }
 }
@@ -197,8 +197,9 @@ ul.links > li > a:hover {
   }
 
   .columns-flow-small {
-    columns: 2;
+    columns: 1;
   }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -215,16 +216,10 @@ ul.links > li > a:hover {
     flex-direction: row;
     margin: 0;
   }
-
 }
 
 @media screen and (max-width: 400px) {
-
   .columns-flow-big {
     font-size: 18px;
-  }
-
-  .columns-flow-small {
-    columns: 1;
   }
 }
